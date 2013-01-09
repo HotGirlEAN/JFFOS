@@ -15,7 +15,9 @@ function expandFullAni ( ncsl )
 	for i=1, scrWid do
 		for ix=1, i do
 			for iz=1, i do
-				drawPixel(ix, iy, ncsl, ncsl)
+				if type(ix) == "number" and type(iz) == "number" then
+					drawPixel(ix, iy, ncsl, ncsl)
+				end
 			end
 		end
 		os.sleep(0.1)
