@@ -27,4 +27,8 @@ function cls ()
 	term.clear()
 	term.setCursorPos(1,1)
 	expandFullAni(colors.lightGray)
-	
+	term.setTextColor(colors.white)
+end
+
+cls()
+
