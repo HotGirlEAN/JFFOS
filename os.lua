@@ -1,9 +1,9 @@
 term.clear()
 term.setCursorPos(1,1)
 
-function drawPixel ( nx, ny, ncol, rcol )
+function drawPixel ( THATNUMBER, THISNUMBER, ncol, rcol )
 	ox, oy = term.getCursorPos()
-	term.setCursorPos( nx, ny )
+	term.setCursorPos( THATNUMBER, THISNUMBER )
 	term.setBackgroundColor(ncol)
 	write(" ")
 	term.setBackgroundColor(rcol)
